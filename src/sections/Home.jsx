@@ -80,17 +80,14 @@ const Home = () => {
   return (
     <section id="home" className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <div className="relative flex-1 flex items-center bg-hero-gradient overflow-hidden">
+      <div className="relative flex-1 flex items-center bg-[#0175B2] overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
           style={{
-            backgroundImage: "url('/images/tyreshop.jpg')", // apni image ka path
+            backgroundImage: "url(https://images.unsplash.com/photo-1622129710676-16a6b2014aec?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)", // apni image ka path
           }}
         ></div>
-
-        {/* Overlay for darkening */}
-        <div className="absolute inset-0 bg-black/30"></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
