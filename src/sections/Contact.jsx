@@ -109,7 +109,7 @@ const Contact = () => {
             {/* Quick Actions */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
-                className= "border-primary text-primary hover:bg-primary hover:text-primary-foreground flex-1 w-full sm:w-auto"
+                className= "border-primary text-primary hover:!bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("https://wa.me/+923212190002", "_blank")}
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
@@ -117,7 +117,7 @@ const Contact = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground flex-1 w-full sm:w-auto"
+                className="border-primary text-primary hover:bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("tel:+923212190002", "_self")}
               >
                 <Phone className="w-4 h-4 mr-2" />
@@ -187,7 +187,7 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-primary-gradient hover:bg-primary-dark text-primary-foreground py-3 text-base sm:text-lg font-semibold shadow-glow-primary transition-all duration-300"
+                    className="w-full bg-primary-dark hover:bg-[bg-primary-dark] text-primary-foreground py-3 text-base sm:text-lg font-semibold shadow-glow-primary transition-all duration-300"
                   >
                     Send Message
                   </Button>
