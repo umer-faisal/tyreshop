@@ -81,12 +81,18 @@ const Home = () => {
     <section id="home" className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <div className="relative flex-1 flex items-center bg-hero-gradient overflow-hidden">
-        <div className="absolute inset-0 bg-white"></div>
+        {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        // style={{ backgroundImage: `url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect width=\"1200\" height=\"600\" fill=\"%23000\"/><text x=\"600\" y=\"300\" text-anchor=\"middle\" fill=\"%23fff\" font-size=\"48\">Hero Image Placeholder</text></svg>')` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
+          style={{
+            backgroundImage: "url('/images/tyreshop.jpg')", // apni image ka path
+          }}
         ></div>
 
+        {/* Overlay for darkening */}
+        <div className="absolute inset-0 bg-black/30"></div>
+
+        {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
@@ -118,7 +124,7 @@ const Home = () => {
       </div>
 
       {/* What We Offer Section */}
-      <div className="bg-section-gradient py-20 " id="services"> 
+      <div className="bg-section-gradient py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
