@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className="bg-[#0175B2] sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-black font-bold text-xl">Tyre Shop</div>
+          <div className="text-[#ffff] font-bold text-xl">New Wheels</div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 text-black">
+          <div className="hidden md:flex items-center space-x-6 text-[#ffff]">
             <a href="#home" className="hover:text-yellow-400">Home</a>
             <a href="#about" className="hover:text-yellow-400">About Us</a>
             <a href="#contact" className="hover:text-yellow-400">Contact</a>

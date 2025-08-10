@@ -109,7 +109,7 @@ const Contact = () => {
             {/* Quick Actions */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
-                className= "border-primary text-primary hover:!bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
+                className= "border-primary !bg-[#0175B2] text-primary hover:!bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("https://wa.me/+923212190002", "_blank")}
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
@@ -117,7 +117,7 @@ const Contact = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-primary text-primary hover:bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
+                className="border-primary  text-[#0175B2] hover:bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("tel:+923212190002", "_self")}
               >
                 <Phone className="w-4 h-4 mr-2" />
@@ -131,7 +131,7 @@ const Contact = () => {
             <Card className="bg-card-gradient border-0 shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl text-card-foreground flex items-center">
-                  <Mail className="w-6 h-6 mr-3 text-primary" />
+                  <Mail className="w-6 h-6 mr-3 text-[#FFC107]" />
                   Send us a Message
                 </CardTitle>
               </CardHeader>
@@ -187,7 +187,7 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full  hover:!bg-[#FFC107] text-primary-foreground py-3 text-base sm:text-lg font-semibold shadow-glow-primary transition-all duration-300"
+                    className="w-full !bg-[#0175B2]   hover:!bg-[#FFC107]  py-3  sm:text-lg font-semibold  transition-all duration-300"
                   >
                     Send Message
                   </Button>
