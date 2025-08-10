@@ -127,6 +127,7 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               What We Offer
             </h2>
+            <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
             <p className="text-xl text-[#4A4A4A] text-muted-foreground max-w-2xl mx-auto">
               Comprehensive tire services delivered by certified professionals
             </p>
@@ -160,7 +161,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">Our Partners</h2>
-            <div className="w-24 h-1 bg-[#BE8113] mx-auto mt-3"></div>
+            <div className="w-24 h-1 bg-[#FFC107] mx-auto mt-3"></div>
           </div>
           <div
             className="relative cursor-pointer"
@@ -199,7 +200,7 @@ const Home = () => {
               {groupedSlides.map((_, idx) => (
                 <button
                   key={idx}
-                  className={`h-2 w-2 rounded-full transition-all ${idx === currentSlideIndex ? 'bg-[#BE8113] w-6' : 'bg-gray-300 hover:bg-gray-400'}`}
+                  className={`h-2 w-2 rounded-full transition-all ${idx === currentSlideIndex ? 'bg-[#FFC107] w-6' : 'bg-gray-300 hover:bg-gray-400'}`}
                   aria-label={`Go to slide ${idx + 1}`}
                   onClick={() => setCurrentSlideIndex(idx)}
                 />
