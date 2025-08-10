@@ -9,10 +9,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main>
-        <Home />
-        <About />
-        <Contact />
+      <main className="">
+        {/* Sections already have container and paddings; ensure scroll margin for sticky header */}
+        <div className="scroll-mt-20" id="home-wrapper">
+          <Home />
+        </div>
+        <div className="scroll-mt-20" id="about-wrapper">
+          <About />
+        </div>
+        <div className="scroll-mt-20" id="contact-wrapper">
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>

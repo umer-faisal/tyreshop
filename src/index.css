@@ -87,3 +87,9 @@
     background: hsl(var(--primary-dark));
   }
 }
+
+@layer components {
+  .container {
+    @apply max-w-7xl;
+  }
+}
