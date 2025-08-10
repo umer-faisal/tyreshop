@@ -187,7 +187,7 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-primary-dark hover:bg-[bg-primary-dark] text-primary-foreground py-3 text-base sm:text-lg font-semibold shadow-glow-primary transition-all duration-300"
+                    className="w-full  hover:!bg-[#FFC107] text-primary-foreground py-3 text-base sm:text-lg font-semibold shadow-glow-primary transition-all duration-300"
                   >
                     Send Message
                   </Button>
