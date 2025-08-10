@@ -25,7 +25,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             About Us
           </h2>
-          <div className="w-24 h-1 bg-primary-gradient mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-[#FFC107] mx-auto mb-8"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -52,7 +52,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-[#0175B2] flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-[#FFC107] flex-shrink-0 mt-0.5" />
                   <span className="text-foreground">{feature}</span>
                 </div>
               ))}
@@ -65,10 +65,10 @@ const About = () => {
               {stats.map((stat, index) => (
                 <Card key={index} className="bg-[#0175B2] border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <CardContent className="p-5 sm:p-6 text-center">
-                    <div className="bg-[#0175B2] text-primary-foreground w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-[#FFC107] text-primary-foreground w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                       {stat.icon}
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-[#0175B2] mb-1 sm:mb-2">
+                    <div className="text-2xl sm:text-3xl font-bold text-[#FFC107] mb-1 sm:mb-2">
                       {stat.number}
                     </div>
                     <div className="text-[#4A4A4A] font-medium">

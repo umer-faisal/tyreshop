@@ -65,7 +65,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
             Contact Us
           </h2>
-          <div className="w-24 h-1 bg-primary-gradient mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-[#FFC107] mx-auto mb-8"></div>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             Get in touch with our tire experts. We're here to help with all your tire needs.
           </p>
@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-600 mb-6 sm:mb-8">
+            <h3 className="text-2xl font-bold text-black mb-6 sm:mb-8">
               Get In Touch
             </h3>
             
@@ -87,7 +87,7 @@ const Contact = () => {
                 >
                   <CardContent className="p-5 sm:p-6">
                     <div className="flex items-start space-x-4 mt-4 sm:mt-6">
-                      <div className="bg-primary-gradient text-primary-foreground p-3 rounded-lg flex-shrink-0">
+                      <div className="bg-[#FFC107] text-primary-foreground p-3 rounded-lg flex-shrink-0">
                         {info.icon}
                       </div>
                       <div>

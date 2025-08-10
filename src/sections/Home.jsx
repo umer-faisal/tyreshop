@@ -133,10 +133,10 @@ const Home = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-card-gradient border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-card-gradient cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
               >
-                <CardContent className="p-8 text-center mt-[20px] cursor-pointer">
-                  <div className="mt- bg-[#0175B2] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <CardContent className="p-8 text-center mt-[20px]">
+                  <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-semibold text-card-foreground mb-4">
