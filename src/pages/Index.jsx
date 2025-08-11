@@ -5,6 +5,7 @@ import Home from '../sections/Home';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
 
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
