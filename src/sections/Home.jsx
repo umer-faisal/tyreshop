@@ -85,33 +85,33 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
           style={{
-            backgroundImage: "url(https://images.unsplash.com/photo-1622129710676-16a6b2014aec?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)", // apni image ka path
+            backgroundImage: "url(/images/hero.jpg)", // apni image ka path
           }}
         ></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight font-[montserrat]">
               Professional{" "}
-              <span className="text-transparent bg-clip-text bg-black">
+              <span className="text-transparent bg-clip-text bg-black font-[montserrat]">
                 Tire Services
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#4A4A4A] mb-8 max-w-2xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#4A4A4A] mb-8 max-w-2xl leading-relaxed font-[montserrat]">
               Experience premium tire solutions with over 10+ years of expertise.
               From premium brands to mobile fitting - we've got you covered.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 font-[montserrat]">
               <Button
                 size="lg"
-                className="border-2 !bg-[#0175B2] hover:!bg-[#FFC107]  px-8 py-3 text-lg font-semibold shadow-glow-primary transition-all duration-300 hover:scale-105"
+                className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107]  px-8 py-3 text-lg font-semibold shadow-glow-primary transition-all duration-300 hover:scale-105"
               >
                 Get Free Quote
               </Button>
               <Button
                 size="lg"
-                className="border-2 !bg-[#0175B2] hover:!bg-[#FFC107] px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
+                className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107] px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
               >
                 View Services
               </Button>
@@ -124,11 +124,11 @@ const Home = () => {
       <div className="bg-section-gradient py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-[montserrat]">
               What We Offer
             </h2>
             <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
-            <p className="text-xl text-[#4A4A4A] text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-[#4A4A4A] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
               Comprehensive tire services delivered by certified professionals
             </p>
           </div>
@@ -137,16 +137,16 @@ const Home = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-card-gradient cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-card-gradient cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group font-[montserrat]"
               >
-                <CardContent className="p-8 text-center mt-[20px]">
-                  <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <CardContent className="p-8 text-center mt-[20px] font-[montserrat]">
+                  <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 font-[montserrat]">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-card-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat]">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed font-[montserrat]">
                     {service.description}
                   </p>
                 </CardContent>

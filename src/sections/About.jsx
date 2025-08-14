@@ -22,7 +22,7 @@ const About = () => {
     <section id="about" className="py-16 sm:py-20 bg-background scroll-mt-18">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-[montserrat]">
             About Us
           </h2>
           <div className="w-24 h-1 bg-[#FFC107] mx-auto mb-8"></div>
@@ -31,18 +31,18 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-6 font-[montserrat]">
               Your Trusted Tire Professionals Since 2014
             </h3>
             
-            <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed font-[montserrat]">
               With over 10 years of dedicated experience in the tire industry, we have built 
               our reputation on three core principles: quality, reliability, and exceptional customer service. 
               Our mission is to provide genuine, high-quality tire products paired with fast, 
               professional installation services.
             </p>
 
-            <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed font-[montserrat]">
               We understand that your vehicle's safety and performance depend on quality tires. 
               That's why we only work with authorized dealers and certified tire brands, ensuring 
               every product meets the highest industry standards.
@@ -82,10 +82,10 @@ const About = () => {
             {/* Mission Statement */}
             <Card className="mt-6 sm:mt-8 bg-white border-0">
               <CardContent className="p-6 sm:p-8 text-center">
-                <h4 className="text-lg sm:text-xl font-bold text-gray-700 mb-3 sm:mb-4">
+                <h4 className="text-lg sm:text-xl font-bold text-gray-700 mb-3 sm:mb-4 font-[montserrat]">
                   Our Mission
                 </h4>
-                <p className="text-gray-600 italic leading-relaxed">
+                <p className="text-gray-600 italic leading-relaxed font-[montserrat]">
                   "To provide every customer with premium tire solutions, exceptional service, 
                   and the peace of mind that comes from working with true professionals."
                 </p>

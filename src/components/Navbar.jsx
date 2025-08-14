@@ -7,14 +7,14 @@ const Navbar = () => {
     <nav className="bg-[#0175B2] sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-[#ffff] font-bold text-xl">New Wheels</div>
+          <div className="text-[#ffff] font-bold text-xl font-[montserrat]">New Wheels</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-[#ffff]">
-            <a href="#home" className="hover:text-[#FFC107]">Home</a>
-            <a href="#services" className="hover:text-[#FFC107]">Services</a>
-            <a href="#about" className="hover:text-[#FFC107]">About Us</a>
-            <a href="#contact" className="hover:text-[#FFC107]">Contact</a>
+            <a href="#home" className="hover:text-[#FFC107] font-[montserrat]">Home</a>
+            <a href="#services" className="hover:text-[#FFC107] font-[montserrat]">Services</a>
+            <a href="#about" className="hover:text-[#FFC107] font-[montserrat]">About Us</a>
+            <a href="#contact" className="hover:text-[#FFC107] font-[montserrat]">Contact</a>
           </div>
 
           {/* Mobile menu button */}
@@ -38,9 +38,9 @@ const Navbar = () => {
       {/* Mobile Menu Panel */}
       <div id="mobile-menu" className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-black/90`}>
         <div className="px-4 pt-2 pb-4 space-y-1 text-white">
-          <a href="#home" className="block px-3 py-2 rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#about" className="block px-3 py-2 rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>About Us</a>
-          <a href="#contact" className="block px-3 py-2 rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="#home" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#about" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>About Us</a>
+          <a href="#contact" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Contact</a>
         </div>
       </div>
     </nav>

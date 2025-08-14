@@ -62,11 +62,11 @@ const Contact = () => {
     <section id="contact" className="py-16 sm:py-20 bg-section-gradient scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4 font-[montserrat]">
             Contact Us
           </h2>
           <div className="w-24 h-1 bg-[#FFC107] mx-auto mb-8"></div>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-[montserrat]">
             Get in touch with our tire experts. We're here to help with all your tire needs.
           </p>
         </div>
@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-black mb-6 sm:mb-8">
+            <h3 className="text-2xl font-bold text-black mb-6 sm:mb-8 font-[montserrat]">
               Get In Touch
             </h3>
             
@@ -82,20 +82,20 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index} 
-                  className={`bg-card-gradient border-0 shadow-lg hover:shadow-xl transition-all duration-300 ${info.action ? 'cursor-pointer hover:-translate-y-1' : ''}`}
+                  className={`bg-card-gradient border-0 font-[montserrat] shadow-lg hover:shadow-xl transition-all duration-300 ${info.action ? 'cursor-pointer hover:-translate-y-1' : ''}`}
                   onClick={info.action}
                 >
                   <CardContent className="p-5 sm:p-6">
                     <div className="flex items-start space-x-4 mt-4 sm:mt-6">
-                      <div className="bg-[#FFC107] text-primary-foreground p-3 rounded-lg flex-shrink-0">
+                      <div className="bg-[#FFC107] text-primary-foreground p-3 rounded-lg flex-shrink-0 font[montserrat]">
                         {info.icon}
                       </div>
                       <div>
-                        <h4 className="font-semibold text-card-foreground mb-1 sm:mb-2">
+                        <h4 className="font-semibold text-card-foreground mb-1 sm:mb-2 font-[montserrat]">
                           {info.title}
                         </h4>
                         {info.details.map((detail, idx) => (
-                          <p key={idx} className="text-muted-foreground text-sm">
+                          <p key={idx} className="text-muted-foreground text-sm font-[montserrat]">
                             {detail}
                           </p>
                         ))}
@@ -112,15 +112,15 @@ const Contact = () => {
                 className= "border-primary !bg-[#0175B2] text-primary hover:!bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("https://wa.me/+923212190002", "_blank")}
               >
-                <MessageCircle className="w-4 h-4 mr-2" />
+                <MessageCircle className="w-4 h-4 mr-2 font-[montserrat]" />
                 WhatsApp Us
               </Button>
               <Button 
                 variant="outline" 
-                className="border-primary  text-[#0175B2] hover:bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
+                className="border-primary  !text-[#0175B2] hover:!bg-[#FFC107] hover:!text-white flex-1 w-full sm:w-auto"
                 onClick={() => window.open("tel:+923212190002", "_self")}
               >
-                <Phone className="w-4 h-4 mr-2" />
+                <Phone className="w-4 h-4 mr-2 font-[montserrat]" />
                 Call Now
               </Button>
             </div>
@@ -131,14 +131,14 @@ const Contact = () => {
             <Card className="bg-card-gradient border-0 shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl text-card-foreground flex items-center">
-                  <Mail className="w-6 h-6 mr-3 text-[#FFC107]" />
+                  <Mail className="w-6 h-6 mr-3 text-[#FFC107] font-[montserrat]" />
                   Send us a Message
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                   <div>
-                    <Label htmlFor="name" className="text-card-foreground font-medium">
+                    <Label htmlFor="name" className="text-card-foreground font-medium font-[montserrat]">
                       Full Name *
                     </Label>
                     <Input
@@ -154,7 +154,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="email" className="text-card-foreground font-medium">
+                    <Label htmlFor="email" className="text-card-foreground font-medium font-[montserrat]">
                       Email Address *
                     </Label>
                     <Input
@@ -170,7 +170,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="message" className="text-card-foreground font-medium">
+                    <Label htmlFor="message" className="text-card-foreground font-medium font-[montserrat]">
                       Message *
                     </Label>
                     <Textarea
@@ -187,12 +187,12 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full !bg-[#0175B2]   hover:!bg-[#FFC107]  py-3  sm:text-lg font-semibold  transition-all duration-300"
+                    className="w-full font-[montserrat] !bg-[#0175B2]   hover:!bg-[#FFC107]  py-3  sm:text-lg font-semibold  transition-all duration-300"
                   >
                     Send Message
                   </Button>
 
-                  <p className="text-sm text-muted-foreground text-center">
+                  <p className="text-sm text-muted-foreground text-center font-[montserrat]">
                     We typically respond within 2-4 hours during business hours.
                   </p>
                 </form>
