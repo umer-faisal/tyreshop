@@ -14,6 +14,7 @@ const Navbar = () => {
             <a href="#home" className="hover:text-[#FFC107] font-[montserrat]">Home</a>
             <a href="#services" className="hover:text-[#FFC107] font-[montserrat]">Services</a>
             <a href="#about" className="hover:text-[#FFC107] font-[montserrat]">About Us</a>
+            <a href="#testimonal" className="hover:text-[#FFC107] font-[montserrat]">Testimonal</a>
             <a href="#contact" className="hover:text-[#FFC107] font-[montserrat]">Contact</a>
           </div>
 
@@ -39,7 +40,9 @@ const Navbar = () => {
       <div id="mobile-menu" className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-black/90`}>
         <div className="px-4 pt-2 pb-4 space-y-1 text-white">
           <a href="#home" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#services" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Services</a>
           <a href="#about" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>About Us</a>
+          <a href="#testimonal" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Testimonal</a>
           <a href="#contact" className="block px-3 py-2 font-[montserrat] rounded-md hover:bg-gray-800" onClick={() => setIsOpen(false)}>Contact</a>
         </div>
       </div>
