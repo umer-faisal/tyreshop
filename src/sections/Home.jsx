@@ -83,9 +83,9 @@ const Home = () => {
       <div className="relative flex-1 flex items-center bg-[#0175B2] overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm bg-full-size"
           style={{
-            backgroundImage: "url(/images/hero.jpg)", // apni image ka path
+            backgroundImage: "url(/images/hero1.jpeg)", // apni image ka path
           }}
         ></div>
 

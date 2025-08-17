@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Home from '../sections/Home';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
+import Testimonal from '../sections/Testimonal';
 
 
 const Index = () => {
@@ -20,6 +21,9 @@ const Index = () => {
         </div>
         <div className="scroll-mt-20" id="contact-wrapper">
           <Contact />
+        </div>
+        <div className="scroll-mt-20" id="contact-wrapper">
+          <Testimonal />
         </div>
       </main>
       <Footer />
