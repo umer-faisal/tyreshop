@@ -83,22 +83,22 @@ const Home = () => {
       <div className="relative flex-1 flex items-center bg-[#0175B2] overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm bg-full-size"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm "
           style={{
-            backgroundImage: "url(/images/hero1.jpeg)", // apni image ka path
+            backgroundImage: "url(/images/hero2.jpeg)", // apni image ka path
           }}
         ></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight font-[montserrat]">
-              Professional{" "}
-              <span className="text-transparent bg-clip-text bg-black font-[montserrat]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-stone-50 mb-6 leading-tight font-[montserrat]">
+              Professional
+              <span className="text-transparent bg-clip-text bg-stone-50 font-[montserrat]">
                 Tire Services
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#4A4A4A] mb-8 max-w-2xl leading-relaxed font-[montserrat]">
+            <p className="text-xl md:text-2xl text-gray-50 mb-8 max-w-2xl leading-relaxed font-[montserrat]">
               Experience premium tire solutions with over 10+ years of expertise.
               From premium brands to mobile fitting - we've got you covered.
             </p>
