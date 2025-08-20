@@ -1,29 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Wrench, Settings, Smartphone, Award } from "lucide-react";
+import { Wrench, Settings, Hammer, CircleDotDashed } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Home = () => {
   const services = [
     {
-      icon: <Award className="w-8 h-8" />,
-      title: "Premium Tire Brands",
-      description: "Top-quality tires from leading manufacturers worldwide"
+      icon: <CircleDotDashed className="w-8 h-8" />,
+      title: "Trusted Brands",
+      description: "Top-quality tires from trusted global manufacturers."
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Wheel Alignment",
-      description: "Precision alignment services for optimal vehicle performance"
+      title: "Perfect Balance",
+      description: "Accurate alignment for a smoother, safer drive."
     },
     {
       icon: <Wrench className="w-8 h-8" />,
-      title: "Tire Repair",
-      description: "Expert repair services to extend your tire's lifespan"
+      title: "Quick Fix",
+      description: "Quick and lasting repair solutions for damaged tires."
     },
     {
-      icon: <Wrench className="w-8 h-8" />,
-      title: "Tire Fitting",
-      description: "Convenient on-site tire fitting at your location"
+      icon: <Hammer className="w-8 h-8" />,
+      title: "Fitted Right",
+      description: "Quick and lasting repair solutions for damaged tires."
     }
   ];
 
@@ -93,14 +93,13 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-stone-50 mb-6 leading-tight font-[montserrat]">
-              Professional
+              Premium Tire &
               <span className="text-transparent bg-clip-text bg-stone-50 font-[montserrat]">
-                Tire Services
+               <br /> Wheel Services
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-50 mb-8 max-w-2xl leading-relaxed font-[montserrat]">
-              Experience premium tire solutions with over 10+ years of expertise.
-              From premium brands to mobile fitting - we've got you covered.
+              Your trusted partner for quality tires, expert fitting & wheel solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 font-[montserrat]">
               <Button
@@ -131,7 +130,7 @@ const Home = () => {
             </h2>
             <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
             <p className="text-xl text-[#4A4A4A] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
-              Comprehensive tire services delivered by certified professionals
+              Comprehensive tire & wheel solutions trusted by thousands of customers.
             </p>
           </div>
 

@@ -3,18 +3,18 @@ import { CheckCircle, Users, Clock, Award } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: <Clock className="w-8 h-8" />, number: "10+", label: "Years Experience" },
+    { icon: <Clock className="w-8 h-8" />, number: "35+", label: "Years Experience" },
     { icon: <Users className="w-8 h-8" />, number: "5000+", label: "Happy Customers" },
     { icon: <Award className="w-8 h-8" />, number: "50+", label: "Tire Brands" },
     { icon: <CheckCircle className="w-8 h-8" />, number: "24/7", label: "Emergency Service" }
   ];
 
   const features = [
-    "Genuine products from authorized dealers only",
+    "Genuine tires from authorized dealers",
+    "Competitive pricing with full transparency",
     "Fast and efficient service guaranteed",
-    "Competitive pricing with transparent quotes",
+    "Professional installation & balancing",
     "Mobile tire fitting service available",
-    "Professional installation and balancing",
     "Comprehensive warranty on all services"
   ];
 
@@ -32,20 +32,19 @@ const About = () => {
           {/* Content */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6 font-[montserrat]">
-              Your Trusted Tire Professionals Since 2014
+              Your Trusted Tire Experts Since 1989
             </h3>
-            
+
             <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed font-[montserrat]">
-              With over 10 years of dedicated experience in the tire industry, we have built 
-              our reputation on three core principles: quality, reliability, and exceptional customer service. 
-              Our mission is to provide genuine, high-quality tire products paired with fast, 
-              professional installation services.
+              For over three decades, Ahmed Abdul Wahab has been serving customers with dedication, professionalism, and unmatched
+              expertise in the tire industry. As a certified professional with an American Diploma from the ALLEN Group (USA), he has built
+              this business on three strong pillars: quality, reliability, and customer trust.
             </p>
 
             <p className="text-base sm:text-lg text-[#4A4A4A] mb-6 sm:mb-8 leading-relaxed font-[montserrat]">
-              We understand that your vehicle's safety and performance depend on quality tires. 
-              That's why we only work with authorized dealers and certified tire brands, ensuring 
-              every product meets the highest industry standards.
+              Our shop is not just about selling tires—it's about ensuring your vehicle's
+              safety, performance, and comfort. From genuine products to professional installation,
+              we guarantee the highest industry standards with every service.
             </p>
 
             {/* Features List */}
@@ -86,8 +85,7 @@ const About = () => {
                   Our Mission
                 </h4>
                 <p className="text-gray-600 italic leading-relaxed font-[montserrat]">
-                  "To provide every customer with premium tire solutions, exceptional service, 
-                  and the peace of mind that comes from working with true professionals."
+                  "To deliver premium tire solutions, professional service, and complete peace of mind—because your journey deserves nothing less"
                 </p>
               </CardContent>
             </Card>
