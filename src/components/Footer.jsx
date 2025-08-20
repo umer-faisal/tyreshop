@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <img src="your-logo.png" alt="Logo" className="w-28 h-auto mb-4" />
             <p className="text-white text-sm">
-              Tutors Point Academy was Established by Late Mrs Nadya Jaffer Ali Ladhani in 2000.
-              Our expert tutors help students unlock their full potential.
+              New Wheels was established in 1989.
+              With international expertise from ALLEN Group, USA, we provide reliable tyres and wheel solutions to keep you moving safely and smoothly.
             </p>
           </div>
 
@@ -21,7 +21,7 @@ const Footer = () => {
             <ul className="space-y-1 text-white text-sm">
               <li><a href="#home" className="hover:text-[#FFC107] font-[montserrat]">Home</a></li>
               <li><a href="#services" className="hover:text-[#FFC107] font-[montserrat]">Services</a></li>
-              <li><a href="#about" className="hover:text-[#FFC107] font-[montserrat]">About us</a></li>             
+              <li><a href="#about" className="hover:text-[#FFC107] font-[montserrat]">About us</a></li>
               <li><a href="#testimonal" className="hover:text-[#FFC107] font-[montserrat]">Testimonal</a></li>
               <li><a href="#contact" className="hover:text-[#FFC107] font-[montserrat]">Contact us</a></li>
             </ul>
@@ -46,7 +46,7 @@ const Footer = () => {
 
 
 
-       <div className="border-t border-white/30 mt-6"></div>
+        <div className="border-t border-white/30 mt-6"></div>
         <div className="container mx-auto px-0 sm:px-6 lg:px-8">
           <div className="text-base sm:text-lg font-[montserrat]">New Wheels</div>
           <p className="text-xs sm:text-sm mt-2 font-[montserrat]">&copy; {new Date().getFullYear()} New Wheels. All rights reserved.</p>
