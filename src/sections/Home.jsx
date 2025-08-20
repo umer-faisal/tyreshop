@@ -104,12 +104,14 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 font-[montserrat]">
               <Button
+                onClick={() => window.location.href = "#form-title"}
                 size="lg"
                 className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107]  px-8 py-3 text-lg font-semibold shadow-glow-primary transition-all duration-300 hover:scale-105"
               >
                 Get Free Quote
               </Button>
               <Button
+                onClick={() => window.location.href = "#services"}
                 size="lg"
                 className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107] px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
               >

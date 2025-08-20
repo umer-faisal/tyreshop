@@ -130,7 +130,7 @@ const Contact = () => {
           <div>
             <Card className="bg-card-gradient border-0 shadow-xl">
               <CardHeader>
-                <CardTitle className="text-2xl text-card-foreground flex items-center">
+                <CardTitle className="text-2xl text-card-foreground flex items-center" id="form-title">
                   <Mail className="w-6 h-6 mr-3 text-[#FFC107] font-[montserrat]" />
                   Send us a Message
                 </CardTitle>
