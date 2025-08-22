@@ -63,7 +63,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 sm:gap-6 cursor-pointer">
               {stats.map((stat, index) => (
                 <Card key={index} className="bg-[#0175B2] border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-                  <CardContent className="p-5 sm:p-6 text-center">
+                  <CardContent className="p-5 sm:p-6 text-center font-[montserrat]">
                     <div className="bg-[#FFC107] text-primary-foreground w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                       {stat.icon}
                     </div>
@@ -80,7 +80,7 @@ const About = () => {
 
             {/* Mission Statement */}
             <Card className="mt-6 sm:mt-8 bg-white border-0">
-              <CardContent className="p-6 sm:p-8 text-center">
+              <CardContent className="p-6 sm:p-8 text-center font-[montserrat]">
                 <h4 className="text-lg sm:text-xl font-bold text-gray-700 mb-3 sm:mb-4 font-[montserrat]">
                   Our Mission
                 </h4>
