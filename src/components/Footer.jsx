@@ -8,7 +8,7 @@ const Footer = () => {
 
           {/* <!-- Left Section: Logo + Description --> */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <img src="your-logo.png" alt="Logo" className="w-28 h-auto mb-4" />
+            <img src="./images/logo.png" alt="Logo" className="h-34 md:h-[8rem] w-auto " />
             <p className="text-white text-sm">
               New Wheels was established in 1989.
               With international expertise from ALLEN Group, USA, we provide reliable tyres and wheel solutions to keep you moving safely and smoothly.
