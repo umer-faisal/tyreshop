@@ -8,8 +8,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* <div className="text-[#ffff] font-bold text-xl font-[montserrat]"></div> */}
-          <img src="./images/logo.png" alt="logo"  className="h-34 md:h-[8rem] w-auto"  />
-
+          <div className="flex-shrink-0">
+            <img
+              src="/images/logo.png"   // ya import path
+              alt="logo"
+              className="h-20 sm:h-24 md:h-28 lg:h-30few w-auto object-contain"
+            />
+          </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-[#ffff]">
             <a href="#home" className="hover:text-[#FFC107] font-[montserrat]">Home</a>
