@@ -5,7 +5,7 @@ const About = () => {
   const stats = [
     { icon: <Clock className="w-8 h-8" />, number: "35+", label: "Years Experience" },
     { icon: <Users className="w-8 h-8" />, number: "5000+", label: "Happy Customers" },
-    { icon: <Award className="w-8 h-8" />, number: "50+", label: "Tire Brands" },
+    { icon: <Award className="w-8 h-8" />, number: "5+", label: "Tire Brands" },
     { icon: <CheckCircle className="w-8 h-8" />, number: "24/7", label: "Emergency Service" }
   ];
 
