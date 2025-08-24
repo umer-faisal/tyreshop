@@ -69,7 +69,7 @@ export default function Testimonal() {
     if (!paused) {
       intervalRef.current = setInterval(() => {
         setIndex((i) => (i + 1) % count)
-      }, 5000)
+      }, 8000)
     }
     return () => clearInterval(intervalRef.current)
   }, [paused, count])
