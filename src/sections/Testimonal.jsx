@@ -110,7 +110,7 @@ export default function Testimonal() {
 
   return (
     <section
-      className="max-w-4xl mx-auto p-6"
+      className="max-w-4xl mx-auto p-6 font-[montserrat]"
       id='testimonal'
       aria-roledescription="carousel"
       aria-label="Customer testimonials"
@@ -133,11 +133,11 @@ export default function Testimonal() {
                 aria-roledescription="slide"
                 aria-label={`${t.name} — ${t.role}`}
               >
-                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 font-[montserrat]">
                   <img
                     src={t.img}
                     alt={`${t.name} avatar`}
-                    className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-none ring-2 ring-gray-100"
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-none ring-2 ring-gray-100 font-[montserrat]"
                     loading="lazy"
                   />
                   <div className="flex-1">
