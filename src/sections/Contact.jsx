@@ -61,7 +61,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 sm:py-20 bg-section-gradient scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16 font-[montserrat]">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4 font-[montserrat]">
             Contact Us
           </h2>
@@ -78,7 +78,7 @@ const Contact = () => {
               Get In Touch
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8 font-[montserrat]">
               {contactInfo.map((info, index) => (
                 <Card 
                   key={index} 
@@ -107,7 +107,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 font-[montserrat]">
               <Button 
                 className= "border-primary !bg-[#0175B2] text-primary hover:!bg-[#FFC107] hover:text-primary-foreground flex-1 w-full sm:w-auto"
                 onClick={() => window.open("https://wa.me/+923212190002", "_blank")}
@@ -130,7 +130,7 @@ const Contact = () => {
           <div>
             <Card className="bg-card-gradient border-0 shadow-xl">
               <CardHeader>
-                <CardTitle className="text-2xl text-card-foreground flex items-center" id="form-title">
+                <CardTitle className="text-2xl text-card-foreground flex items-center !font-[montserrat]" id="form-title">
                   <Mail className="w-6 h-6 mr-3 text-[#FFC107] font-[montserrat]" />
                   Send us a Message
                 </CardTitle>
@@ -148,7 +148,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="mt-2 border-border focus:ring-primary focus:border-primary"
+                      className="mt-2 border-border focus:ring-primary focus:border-primary !font-[montserrat]"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="mt-2 border-border focus:ring-primary focus:border-primary"
+                      className="mt-2 border-border focus:ring-primary focus:border-primary font-[montserrat]"
                       placeholder="Enter your email address"
                     />
                   </div>
@@ -180,7 +180,7 @@ const Contact = () => {
                       rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="mt-2 border-border focus:ring-primary focus:border-primary resize-none"
+                      className="mt-2 border-border focus:ring-primary focus:border-primary resize-none font-[montserrat]"
                       placeholder="Tell us about your tire needs, questions, or how we can help..."
                     />
                   </div>

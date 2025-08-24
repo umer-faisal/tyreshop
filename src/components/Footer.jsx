@@ -3,13 +3,15 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#0175B2] py-6 px-4 text-center text-white">
+      <footer className="bg-[#01639A] py-6 px-4 text-center text-white">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
 
           {/* <!-- Left Section: Logo + Description --> */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <img src="./images/logo.png" alt="Logo" className="h-34 md:h-[8rem] w-auto " />
-            <p className="text-white text-sm">
+          <a href="/">
+            <img src="./images/logo-f.png" alt="Logo" className="h-34 md:h-[8rem] w-auto " />
+          </a>
+            <p className="text-white text-sm font-[montserrat] ">
               New Wheels was established in 1989.
               With international expertise from ALLEN Group, USA, we provide reliable tyres and wheel solutions to keep you moving safely and smoothly.
             </p>

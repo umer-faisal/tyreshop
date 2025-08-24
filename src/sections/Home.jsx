@@ -80,7 +80,7 @@ const Home = () => {
   return (
     <section id="home" className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <div className="relative flex-1 flex items-center bg-[#0175B2] overflow-hidden">
+      <div className="relative flex-1 flex items-center bg-[#01639A] overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[2px] "
@@ -94,7 +94,7 @@ const Home = () => {
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-stone-50 mb-6 leading-tight font-[montserrat]">
               Premium Tire &
-              <span className="text-transparent bg-clip-text bg-stone-50 font-[montserrat]">
+              <span className="text-transparent bg-clip-text bg-stone-50 !font-[montserrat]">
                <br /> Wheel Services
               </span>
             </h1>
@@ -105,14 +105,14 @@ const Home = () => {
               <Button
                 onClick={() => window.location.href = "#form-title"}
                 size="lg"
-                className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107]  px-8 py-3 text-lg font-semibold shadow-glow-primary transition-all duration-300 hover:scale-105"
+                className="font-[montserrat] border-2 !bg-[#01639A] hover:!bg-[#FFC107]  px-8 py-3 text-lg font-semibold shadow-glow-primary transition-all duration-300 hover:scale-105"
               >
                 Get Free Quote
               </Button>
               <Button
                 onClick={() => window.location.href = "#services"}
                 size="lg"
-                className="font-[montserrat] border-2 !bg-[#0175B2] hover:!bg-[#FFC107] px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
+                className="font-[montserrat] border-2 !bg-[#01639A] hover:!bg-[#FFC107] px-8 py-3 text-lg font-semibold transition-all duration-300 hover:scale-105"
               >
                 View Services
               </Button>
@@ -122,14 +122,14 @@ const Home = () => {
       </div>
 
       {/* What We Offer Section */}
-      <div className="bg-section-gradient py-20 " id="services">
+      <div className="bg-[#2F2F2F] py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-[montserrat]">
+          <div className="text-center mb-16 !font-[montserrat]">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 !font-[montserrat]">
               What We Offer
             </h2>
             <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
-            <p className="text-xl text-[#4A4A4A] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
+            <p className="text-xl text-[white] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
               Comprehensive tire & wheel solutions trusted by thousands of customers.
             </p>
           </div>
@@ -138,16 +138,16 @@ const Home = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-card-gradient cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group font-[montserrat]"
+                className="bg-[#262626] cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group font-[montserrat]"
               >
                 <CardContent className="p-8 text-center mt-[20px] font-[montserrat]">
                   <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 font-[montserrat]">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat]">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat] text-[white]">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed font-[montserrat]">
+                  <p className="text-muted-foreground leading-relaxed font-[montserrat] text-[white]">
                     {service.description}
                   </p>
                 </CardContent>
@@ -161,7 +161,7 @@ const Home = () => {
       <div className="bg-background py-12 sm:pt-[30px] pb-0">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Our Partners</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground !font-[montserrat]">Our Partners</h2>
             <div className="w-24 h-1 bg-[#FFC107] mx-auto mt-3"></div>
           </div>
           <div

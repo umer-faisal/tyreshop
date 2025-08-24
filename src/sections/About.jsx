@@ -22,7 +22,7 @@ const About = () => {
     <section id="about" className="py-16 sm:py-20 bg-background scroll-mt-18">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-[montserrat]">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 !font-[montserrat]">
             About Us
           </h2>
           <div className="w-24 h-1 bg-[#FFC107] mx-auto mb-8"></div>
@@ -50,7 +50,7 @@ const About = () => {
             {/* Features List */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-3">
+                <div key={index} className="flex items-start space-x-3 font-[montserrat]">
                   <CheckCircle className="w-5 h-5 text-[#FFC107] flex-shrink-0 mt-0.5" />
                   <span className="text-foreground">{feature}</span>
                 </div>

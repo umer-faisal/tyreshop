@@ -4,17 +4,19 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0175B2] sticky top-0 z-50">
+    <nav className="bg-[#01639A] sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* <div className="text-[#ffff] font-bold text-xl font-[montserrat]"></div> */}
+          <a href="/">
           <div className="flex-shrink-0">
             <img
-              src="/images/logo.png"   // ya import path
+              src="/images/logo-f.png"   // ya import path
               alt="logo"
               className="h-20 sm:h-24 md:h-28 lg:h-30few w-auto object-contain"
             />
           </div>
+          </a>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 text-[#ffff]">
             <a href="#home" className="hover:text-[#FFC107] font-[montserrat]">Home</a>
