@@ -41,9 +41,9 @@ const Contact = () => {
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      details: ["+92 321 2190002"],
-      action: () => window.open("tel:+923212190002", "_self")
+      title: "PTCL",
+      details: ["021-36338627"],
+      action: () => window.open("tel:021-36338627", "_self")
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
@@ -54,7 +54,7 @@ const Contact = () => {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Business Hours",
-      details: ["Mon-Fri: 8:00 AM - 6:00 PM", "Sat: 9:00 AM - 4:00 PM", "Sun: Emergency Only"]
+      details: ["Mon-Sat: 11:00 AM - 9:00 PM", "Sun: 11:00 AM - 7:00 PM"]
     }
   ];
 
@@ -85,7 +85,7 @@ const Contact = () => {
                   className={`bg-card-gradient border-0 font-[montserrat] shadow-lg hover:shadow-xl transition-all duration-300 ${info.action ? 'cursor-pointer hover:-translate-y-1' : ''}`}
                   onClick={info.action}
                 >
-                  <CardContent className="p-5 sm:p-6">
+                  <CardContent className="p-5 sm:p-6 cursor-pointer">
                     <div className="flex items-start space-x-4 mt-4 sm:mt-6">
                       <div className="bg-[#FFC107] text-primary-foreground p-3 rounded-lg flex-shrink-0 font[montserrat]">
                         {info.icon}
