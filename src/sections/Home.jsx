@@ -144,10 +144,10 @@ const Home = () => {
                   <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 font-[montserrat]">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat] text-[white]">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat] !text-[white]">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed font-[montserrat] text-[white]">
+                  <p className="text-muted-foreground leading-relaxed font-[montserrat] !text-[white]">
                     {service.description}
                   </p>
                 </CardContent>
