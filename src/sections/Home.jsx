@@ -31,8 +31,8 @@ const Home = () => {
   const slides = [
     { src: "/images/winda.png", alt: "Winda" },
     { src: "/images/yokohama.png", alt: "Yokohama" },
-    { src: "/images/general-tire.png", alt: "General Tire" },
-    { src: "/images/Bridgestone.png", alt: "Bridgestone" },
+    { src: "/images/wanda.png", alt: "wanda" },
+    { src: "/images/Lassa.png", alt: "Lassa" },
     { src: "/images/Dunlop.png", alt: "Dunlop" },
     { src: "/images/GT-Radial.png", alt: "GT Radial" },
     { src: "/images/nankang.png", alt: "Nankang" }
@@ -182,7 +182,7 @@ const Home = () => {
                           <img
                             src={slide.src}
                             alt={slide.alt}
-                            className="max-h-12 sm:max-h-16 md:max-h-20 w-auto object-contain grayscale opacity-90 hover:opacity-100 hover:grayscale-0 transition"
+                            className="max-h-12 sm:max-h-16 md:max-h-20 w-auto object-contain opacity-90 hover:opacity-100 hover:grayscale-0 transition"
                             loading="lazy"
                             draggable={false}
                           />
