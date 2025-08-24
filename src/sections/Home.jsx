@@ -129,7 +129,7 @@ const Home = () => {
               What We Offer
             </h2>
             <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
-            <p className="text-xl text-[white] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
+            <p className="text-xl !text-[white] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
               Comprehensive tire & wheel solutions trusted by thousands of customers.
             </p>
           </div>
