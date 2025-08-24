@@ -11,7 +11,7 @@ const Navbar = () => {
           <a href="/">
           <div className="flex-shrink-0">
             <img
-              src="/images/logo-f.png"   // ya import path
+              src="/images/logo-final.png"   // ya import path
               alt="logo"
               className="h-20 sm:h-24 md:h-28 lg:h-30few w-auto object-contain"
             />

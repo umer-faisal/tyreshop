@@ -9,7 +9,7 @@ const Footer = () => {
           {/* <!-- Left Section: Logo + Description --> */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <a href="/">
-            <img src="./images/logo-f.png" alt="Logo" className="h-34 md:h-[8rem] w-auto " />
+            <img src="./images/logo-final.png" alt="Logo" className="h-34 md:h-[8rem] w-auto " />
           </a>
             <p className="text-white text-sm font-[montserrat] ">
               New Wheels was established in 1989.
