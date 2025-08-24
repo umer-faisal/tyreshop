@@ -122,14 +122,14 @@ const Home = () => {
       </div>
 
       {/* What We Offer Section */}
-      <div className="bg-[#2F2F2F] py-20 " id="services">
+      <div className="bg-[#CCCCCC] py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 !font-[montserrat]">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 !font-[montserrat]">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 !font-[montserrat]">
               What We Offer
             </h2>
             <div className="w-[160px] h-1 bg-[#FFC107] mx-auto mb-8"></div>
-            <p className="text-xl !text-[white] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
+            <p className="text-xl !text-[black] text-muted-foreground max-w-2xl mx-auto font-[montserrat]">
               Comprehensive tire & wheel solutions trusted by thousands of customers.
             </p>
           </div>
