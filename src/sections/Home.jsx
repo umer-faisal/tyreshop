@@ -122,7 +122,7 @@ const Home = () => {
       </div>
 
       {/* What We Offer Section */}
-      <div className="!bg-[#E0E0E0] py-20 " id="services">
+      <div className="!bg-[white] py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 !font-[montserrat]">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 !font-[montserrat]">
@@ -138,16 +138,16 @@ const Home = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-[#ffff] cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group font-[montserrat]"
+                className="bg-[#262626] cursor-pointer border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group font-[montserrat]"
               >
                 <CardContent className="p-8 text-center mt-[20px] font-[montserrat]">
                   <div className="mt- bg-[#FFC107] text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 font-[montserrat]">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat] text-[black]">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-4 font-[montserrat] text-[white]">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed font-[montserrat] text-gray-700">
+                  <p className="text-muted-foreground leading-relaxed font-[montserrat] text-[white]">
                     {service.description}
                   </p>
                 </CardContent>
