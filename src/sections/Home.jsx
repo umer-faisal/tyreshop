@@ -122,7 +122,7 @@ const Home = () => {
       </div>
 
       {/* What We Offer Section */}
-      <div className="!bg-[white] py-20 " id="services">
+      <div className="!bg-section-gradient py-20 " id="services">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 !font-[montserrat]">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 !font-[montserrat]">
