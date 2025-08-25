@@ -6,9 +6,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, MessageCircle, Mail, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { toast } = useToast();
+  const formRef = useRef();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,13 +27,35 @@ const Contact = () => {
     }));
   };
 
+  // ✅ EmailJS Integration
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs
+      .sendForm(
+        "service_s4yl77e",     // 🔹 EmailJS se copy karo
+        "template_9nfauqz",    // 🔹 EmailJS Template ka ID
+        formRef.current,
+        "Pyr4OyDf7gjcSXyRx"      // 🔹 EmailJS Public key
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS:", result.text);
+          toast({
+            title: "Message Sent!",
+            description: "Thank you for your inquiry. We'll get back to you soon.",
+          });
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("FAILED:", error.text);
+          toast({
+            title: "Message Failed!",
+            description: "Something went wrong. Please try again later.",
+            variant: "destructive",
+          });
+        }
+      );
   };
 
   const contactInfo = [
@@ -136,7 +162,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                   <div>
                     <Label htmlFor="name" className="text-card-foreground font-medium font-[montserrat]">
                       Full Name *
